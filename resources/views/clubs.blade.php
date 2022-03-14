@@ -7,6 +7,11 @@
     <title>Laravel</title>
 </head>
 <body>
+    <header>
+        <a href="{{route('home')}}">Home</a>
+        <a href="{{route('clubs')}}">Clubs</a>
+        <a href="{{route('match')}}">Partite</a>
+    </header>
     <h1>SQUADRE DI CALCIO</h1>
     <ul>
         @foreach($clubs as $club)
@@ -14,6 +19,6 @@
         @endforeach
     </ul>
 
-    <a href="{{route('home')}}">Home</a>
+    
 </body>
 </html>
