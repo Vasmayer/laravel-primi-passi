@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/clubs', function () {
 
     $clubs = ['clubs'=>['Milan','Iter','Napoli']];
+
+    return view('clubs',$clubs);
+})->name('clubs');
+
+Route::get('/', function () {
     
-    return view('home',$clubs);
-});
+    return view('home');
+})->name('home');
